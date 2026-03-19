@@ -114,10 +114,12 @@ public class Mobiles {
                 }
                 case BALANCED -> {
                     // TODO
-                    System.out.println(root.isBalanced());
+                    System.out.println("ROD_A balanced? " + root.isBalanced());
+                    //Find the imbalance value later (:
                 }
                 case WEIGHT -> {
-                    System.out.println(root.getWeight());
+
+                    System.out.println("ROD_A weight? " + root.getWeight());
 
                     // TODO
                 }
