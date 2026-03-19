@@ -37,6 +37,21 @@ public class MobileParser {
      */
     private Node parse(BufferedReader in) throws IOException {
         // TODO
+        /*  Example Mobile File for Reference, all files (preorderd!!!)
+                ROD ROD_A 70 60 90
+                BALL BALL_A 50 30 90
+                ROD ROD_B 170 100 50
+                BALL BALL_B 90 40 20
+                BALL BALL_C 60 35 40
+         */
+
+        String line = in.readLine();
+        String[] fields = line.split("\\st");
+        /*
+        if(fields[0].isEqual("ROD")){
+            Rod rod = new Rod(field[1], field[2],)
+        }
+        */
         return null;
     }
 
