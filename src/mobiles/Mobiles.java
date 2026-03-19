@@ -114,8 +114,11 @@ public class Mobiles {
                 }
                 case BALANCED -> {
                     // TODO
+                    System.out.println(root.isBalanced());
                 }
                 case WEIGHT -> {
+                    System.out.println(root.getWeight());
+
                     // TODO
                 }
                 case ROOT -> root();
