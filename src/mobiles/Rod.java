@@ -15,7 +15,7 @@ public class Rod implements Node{
     private Node right_node;
     private Node left_node;
 
-    public Rod(String a,int b, int c, int d, Node e, Node f){
+    public Rod(String a, int b, int c, int d, Node e, Node f){
         name = a;
         cord_len =b;
         left_len = c;

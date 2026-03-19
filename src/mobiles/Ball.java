@@ -12,6 +12,13 @@ public class Ball implements Node{
     private int radius;
     private int weight;
 
+    public Ball(String a, int b, int c, int d)
+    {
+        name = a;
+        cord_len = b;
+        radius = c;
+        weight = d;
+    }
     @Override
     public int getWeight()
     {

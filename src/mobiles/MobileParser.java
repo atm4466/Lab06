@@ -3,6 +3,7 @@ package mobiles;
 import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
+import java.util.Objects;
 
 /**
  * The class who parses the mobile file and builds the mobile tree.
@@ -47,11 +48,17 @@ public class MobileParser {
 
         String line = in.readLine();
         String[] fields = line.split("\\st");
-        /*
-        if(fields[0].isEqual("ROD")){
-            Rod rod = new Rod(field[1], field[2],)
+
+        if(Objects.equals(fields[0], "ROD")){
+            //your objective here(String a,int b, int c, int d, Node e, Node f)
+            Rod rod = new Rod(fields[1], Integer.valueOf(fields[2]),Integer.valueOf(fields[3]),Integer.valueOf(fields[4]),parse(in),parse(in));
         }
-        */
+        else if(Objects.equals(fields[0], "Ball"))
+        {
+            //(String a, int b, int c, int d)
+            Ball ball = new Ball(fields[1],Integer.valueOf(fields[2]),Integer.valueOf(fields[3]),Integer.valueOf(fields[4]));
+        }
+
         return null;
     }
 
