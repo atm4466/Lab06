@@ -6,7 +6,7 @@ package mobiles;
  * @author RIT CS
  * @author YOUR NAME HERE
  */
-public class Rod {
+public class Rod implements Node{
     // TODO
     private String name;
     private int cord_len;
@@ -25,5 +25,22 @@ public class Rod {
 
     }
 
-    
+    @Override
+    public int get_Weight(){
+        return right_node.getWeight()+left_node.getWeight();
+
+
+    }
+
+    @Override
+    public boolean is_balanced()
+    {
+
+        if(left_node.getWeight() == right_node.getWeight())
+        {
+            return true;
+
+        }
+        return false;
+    }
 }

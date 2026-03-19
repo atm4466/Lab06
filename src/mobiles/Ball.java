@@ -12,11 +12,12 @@ public class Ball implements Node{
     private int radius;
     private int weight;
 
+    @Override
     public int getWeight()
     {
         return weight;
     }
-
+    @Override
     public boolean isBalanced()
     {
         return true;
