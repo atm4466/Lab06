@@ -16,7 +16,7 @@ public class Ball implements Node{
     {
         return weight;
     }
-    
+
     public boolean isBalanced()
     {
         return true;
