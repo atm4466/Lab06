@@ -1,0 +1,24 @@
+Welcome to the L-system drawing generator!
+Enter axiom (initial string): Enter the number of rules: Enter rule #0: Enter rule #1: Enter angle of rotation: Enter initial line segment's length: Enter initial heading: Enter number of steps: Generating the string ...
+Result:
+--F++G-+++F--G+-f
+Drawing ...
+right(45)
+right(45)
+forward(50.0)
+left(45)
+left(45)
+forward(50.0)
+right(45)
+left(45)
+left(45)
+left(45)
+forward(50.0)
+right(45)
+right(45)
+forward(50.0)
+left(45)
+right(45)
+pen up
+forward(50.0)
+pen down

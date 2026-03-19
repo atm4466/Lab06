@@ -1,0 +1,16 @@
+F
+2
+F=>02F-G
+G=<F+G
+90
+10
+90
+10
+
+# Comments section
+# Image: Multi-colored dragon curve
+# Testing:
+#   basic drawing symbols including rotation commands
+#   initial turtle's heading is north
+#   next color command with argument
+#   previous color command with no argument

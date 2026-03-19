@@ -1,0 +1,14 @@
+F
+1
+F=F[-F]F[+F][F]
+25
+4
+90
+6
+
+# Comments section
+# Image: Single-colored plant structure
+# Testing:
+#   basic drawing symbols including rotation commands
+#   branching commands
+#   turtle's initial heading is north

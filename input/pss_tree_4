@@ -1,0 +1,16 @@
+++#05FX
+1
+X=>02@0.50[-FX]+FX
+45
+150
+0
+4
+
+# Comments section
+# Image: Four-colored scalar tree
+# Testing:
+#   basic drawing symbols including rotation commands
+#   branching symbols
+#   decrease line segment command
+#   next color command with argument
+#   pen size command

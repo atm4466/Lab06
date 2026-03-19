@@ -1,0 +1,128 @@
+Welcome to the L-system drawing generator!
+Enter axiom (initial string): Enter the number of rules: Enter rule #0: Enter angle of rotation: Enter initial line segment's length: Enter initial heading: Enter number of steps: Generating the string ...
+Result:
+++#05F>02@0.50[-F>02@0.50[-F>02@0.50[-FX]+FX]+F>02@0.50[-FX]+FX]+F>02@0.50[-F>02@0.50[-FX]+FX]+F>02@0.50[-FX]+FX
+Drawing ...
+left(45)
+left(45)
+pensize(5)
+forward(150.0)
+pencolor('violet')
+saving turtle's state ...
+	 position: (0.0,150.0)
+	 heading: 90.0
+	 line segment's length: 75.0
+	 pen size: 5
+	 color: 'violet'
+right(45)
+forward(75.0)
+pencolor('burlywood')
+saving turtle's state ...
+	 position: (53.03,203.03)
+	 heading: 45.0
+	 line segment's length: 37.5
+	 pen size: 5
+	 color: 'burlywood'
+right(45)
+forward(37.5)
+pencolor('violet red')
+saving turtle's state ...
+	 position: (90.53,203.03)
+	 heading: 0.0
+	 line segment's length: 18.75
+	 pen size: 5
+	 color: 'violet red'
+right(45)
+forward(18.75)
+restoring turtle's state ...
+	 position: (90.53,203.03)
+	 heading: 0.0
+	 line segment's length: 18.75
+	 pen size: 5
+	 color: 'violet red'
+left(45)
+forward(18.75)
+restoring turtle's state ...
+	 position: (53.03,203.03)
+	 heading: 45.0
+	 line segment's length: 37.5
+	 pen size: 5
+	 color: 'burlywood'
+left(45)
+forward(37.5)
+pencolor('violet red')
+saving turtle's state ...
+	 position: (53.03,240.53)
+	 heading: 90.0
+	 line segment's length: 18.75
+	 pen size: 5
+	 color: 'violet red'
+right(45)
+forward(18.75)
+restoring turtle's state ...
+	 position: (53.03,240.53)
+	 heading: 90.0
+	 line segment's length: 18.75
+	 pen size: 5
+	 color: 'violet red'
+left(45)
+forward(18.75)
+restoring turtle's state ...
+	 position: (0.0,150.0)
+	 heading: 90.0
+	 line segment's length: 75.0
+	 pen size: 5
+	 color: 'violet'
+left(45)
+forward(75.0)
+pencolor('burlywood')
+saving turtle's state ...
+	 position: (-53.03,203.03)
+	 heading: 135.0
+	 line segment's length: 37.5
+	 pen size: 5
+	 color: 'burlywood'
+right(45)
+forward(37.5)
+pencolor('violet red')
+saving turtle's state ...
+	 position: (-53.03,240.53)
+	 heading: 90.0
+	 line segment's length: 18.75
+	 pen size: 5
+	 color: 'violet red'
+right(45)
+forward(18.75)
+restoring turtle's state ...
+	 position: (-53.03,240.53)
+	 heading: 90.0
+	 line segment's length: 18.75
+	 pen size: 5
+	 color: 'violet red'
+left(45)
+forward(18.75)
+restoring turtle's state ...
+	 position: (-53.03,203.03)
+	 heading: 135.0
+	 line segment's length: 37.5
+	 pen size: 5
+	 color: 'burlywood'
+left(45)
+forward(37.5)
+pencolor('violet red')
+saving turtle's state ...
+	 position: (-90.53,203.03)
+	 heading: 180.0
+	 line segment's length: 18.75
+	 pen size: 5
+	 color: 'violet red'
+right(45)
+forward(18.75)
+restoring turtle's state ...
+	 position: (-90.53,203.03)
+	 heading: 180.0
+	 line segment's length: 18.75
+	 pen size: 5
+	 color: 'violet red'
+left(45)
+forward(18.75)

@@ -1,0 +1,16 @@
+#02F
+2
+F=>F+F-F-F-f<02+F+F+F-F
+f=fff
+90
+15
+45
+4
+
+# Comments section
+# Image: Multi-colored sierpinski carpet
+# Testing:
+#   basic drawing symbols including rotation commands
+#   next color command with no argument
+#   previous color command with argument
+#   pen size command

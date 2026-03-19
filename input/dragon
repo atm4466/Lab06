@@ -1,0 +1,14 @@
+F
+2
+F=F-G
+G=F+G
+90
+10
+90
+10
+
+# Comments section
+# Image: Single-colored dragon curve
+# Testing:
+#   basic drawing symbols including rotation commands
+#   initial turtle's heading is north

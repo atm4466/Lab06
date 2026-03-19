@@ -1,0 +1,13 @@
+F
+1
+F=F+F-F-F+F<
+90
+2
+0
+6
+
+# Comments section
+# Image: Multi-colored koch curve
+# Testing:
+#   basic drawing symbols including rotation commands
+#   previous color command with no argument

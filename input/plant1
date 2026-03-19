@@ -1,0 +1,15 @@
+X
+2
+X=F+[[>03X]-X]-F[>03-FX]+X
+F=FF
+25
+4
+90
+6
+
+# Comments section
+# Image: Multi-colored plant structure
+# Testing:
+#   basic drawing symbols including rotation commands
+#   branching commands
+#   next color command with argument

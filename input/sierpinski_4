@@ -1,0 +1,13 @@
+F+G+G
+2
+F=F+G-F-G+F
+G=GG
+120
+20
+0
+4
+
+# Comments section
+# Image: Single-colored sierpinski triangle
+# Testing:
+#   basic drawing symbols including rotation commands

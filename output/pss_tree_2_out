@@ -1,0 +1,25 @@
+Welcome to the L-system drawing generator!
+Enter axiom (initial string): Enter the number of rules: Enter rule #0: Enter angle of rotation: Enter initial line segment's length: Enter initial heading: Enter number of steps: Generating the string ...
+Result:
+++F>@0.50[-FX]+FX
+Drawing ...
+left(45)
+left(45)
+forward(100.0)
+pencolor('dark blue')
+saving turtle's state ...
+	 position: (0.0,100.0)
+	 heading: 90.0
+	 line segment's length: 50.0
+	 pen size: 1
+	 color: 'dark blue'
+right(45)
+forward(50.0)
+restoring turtle's state ...
+	 position: (0.0,100.0)
+	 heading: 90.0
+	 line segment's length: 50.0
+	 pen size: 1
+	 color: 'dark blue'
+left(45)
+forward(50.0)

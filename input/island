@@ -1,0 +1,14 @@
+F-F-F-F-
+1
+F=>FF-F-F-F-F-F+F
+90
+5
+180
+4
+
+# Comments section
+# Image: Single-colored sierpinski triangle
+# Testing:
+#   basic drawing symbols including rotation commands
+#   next color command with no argument
+#   turtle's initial heading is facing west

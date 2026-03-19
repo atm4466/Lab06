@@ -1,0 +1,14 @@
+F+G+G
+2
+F=F+G-F-G+F<03
+G=GG
+120
+5
+0
+7
+
+# Comments section
+# Image: Multi-colored sierpinski triangle
+# Testing:
+#   basic drawing symbols including rotation commands
+#   previous color command with argument
