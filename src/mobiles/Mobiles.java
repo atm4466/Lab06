@@ -116,7 +116,7 @@ public class Mobiles {
                     // TODO
                     System.out.println("ROD_A balanced? " + root.isBalanced());
                     System.out.println("Imbalance amount: " + root.getImbalance());
-                    
+
                     //usually Strings and ints dont mix but if I mask this variable it gets red lined.
                 }
                 case WEIGHT -> {
