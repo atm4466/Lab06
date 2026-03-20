@@ -31,6 +31,14 @@ public class Rod implements Node{
 
 
     }
+    @Override
+    public int getImbalance() {
+
+        int LTORQUE  = (int)left_len*left_node.getWeight();
+        int RTOQUE = (int)right_len*right_node.getWeight();
+        //This should be fine assuming it can be negative or posotive difference.
+        return LTORQUE - RTOQUE;
+    }
 
     public int getCord_len()
     {

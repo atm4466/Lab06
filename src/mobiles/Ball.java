@@ -47,5 +47,12 @@ public class Ball implements Node{
         return "Ball(name=" + name + ", cord=" + cord_len +", radius=" + radius +", weight=" + weight + ")";
 
     }
+
+    @Override
+    public int getImbalance() {
+        return 0;
+
+        //The ball class has 0 imblance as its the end.
+    }
     //Ball(name={NAME}, cord=#, radius=#, weight=#)
 }
