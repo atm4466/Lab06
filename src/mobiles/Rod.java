@@ -41,7 +41,7 @@ public class Rod implements Node{
     public boolean is_balanced()
     {
 
-        if(left_node.getWeight() == right_node.getWeight())
+        if((left_node.getWeight()*left_len) == (right_node.getWeight()*right_len))
         {
             return true;
 
@@ -60,8 +60,12 @@ public class Rod implements Node{
     @Override
     public String toString()
     {
-        return "name=" + name + ", cord=" + (String)cord_len + ", leftChild=" + left_node +
+
+        return String.format("Rod(name=%s, cord=%d, leftArm=%d, leftChild=%s, " +
+                        "rightArm=%d, rightChild=%s)",
+                name, cord_len, left_len, left_node, right_len, right_node);
     }
+    
     //Rod(name={NAME}, cord=#, leftArm=#, leftChild={LEFT_CHILD}, rightArm=#, rightChild={RIGHT_CHILD})
 
 }
