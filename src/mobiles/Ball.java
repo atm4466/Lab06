@@ -34,10 +34,17 @@ public class Ball implements Node{
     {
         return weight;
     }
+
     @Override
     public boolean isBalanced()
     {
         return true;
+
+    }
+    @Override
+    public String toString()
+    {
+        return "Ball(name=" + name + ", cord=" + cord_len +", radius=" + radius +", weight=" + weight + ")";
 
     }
     //Ball(name={NAME}, cord=#, radius=#, weight=#)

@@ -13,6 +13,7 @@ public abstract interface Node {
     public abstract int getWeight();
     public abstract boolean isBalanced();
 
+    public String toString();
 
 
 }
