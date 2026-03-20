@@ -26,7 +26,7 @@ public class Rod implements Node{
     }
 
     @Override
-    public int get_Weight(){
+    public int getWeight(){
         return right_node.getWeight()+left_node.getWeight();
 
 
@@ -38,7 +38,7 @@ public class Rod implements Node{
     }
 
     @Override
-    public boolean is_balanced()
+    public boolean isBalanced()
     {
 
         if((left_node.getWeight()*left_len) == (right_node.getWeight()*right_len))
@@ -65,7 +65,7 @@ public class Rod implements Node{
                         "rightArm=%d, rightChild=%s)",
                 name, cord_len, left_len, left_node, right_len, right_node);
     }
-    
+
     //Rod(name={NAME}, cord=#, leftArm=#, leftChild={LEFT_CHILD}, rightArm=#, rightChild={RIGHT_CHILD})
 
 }
