@@ -7,7 +7,7 @@ import java.util.Scanner;
  * The main application for building and querying mobile trees.
  *
  * @author RIT CS
- * @author YOUR NAME HERE
+ * @author Andrew Moor
  */
 public class Mobiles {
     /** the prompt */
@@ -54,7 +54,13 @@ public class Mobiles {
         System.out.println("help: this help message");
         System.out.println("quit: end the program");
     }
+    public int getImbalance()
+    {
+        Rod temp = (Rod) root;
+        int imb = temp.getLeft_node().getWeight()*temp.getLeft_node().getCord_len() - temp.getRight_node().getWeight()*temp.getRight_node().getCord_len();
+        return imb;
 
+    }
     /**
      * Load a new mobile from a file
      * @param filename the mobile file
@@ -115,7 +121,8 @@ public class Mobiles {
                 case BALANCED -> {
                     // TODO
                     System.out.println("ROD_A balanced? " + root.isBalanced());
-                    //Find the imbalance value later (:
+                    System.out.println("Imbalance amount: " + getImbalance());
+                    //usually Strings and ints dont mix but if I mask this variable it gets red lined.
                 }
                 case WEIGHT -> {
 

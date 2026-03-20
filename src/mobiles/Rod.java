@@ -4,7 +4,7 @@ package mobiles;
  * Represent a rod in the mobile tree.
  *
  * @author RIT CS
- * @author YOUR NAME HERE
+ * @author Andrew Moor
  */
 public class Rod implements Node{
     // TODO
@@ -32,6 +32,11 @@ public class Rod implements Node{
 
     }
 
+    public int getCord_len()
+    {
+        return cord_len;
+    }
+
     @Override
     public boolean is_balanced()
     {
@@ -43,4 +48,20 @@ public class Rod implements Node{
         }
         return false;
     }
+    public Node getLeft_node()
+    {
+        return left_node;
+    }
+    public Node getRight_node()
+    {
+        return right_node;
+
+    }
+    @Override
+    public String toString()
+    {
+        return "name=" + name + ", cord=" + (String)cord_len + ", leftChild=" + left_node +
+    }
+    //Rod(name={NAME}, cord=#, leftArm=#, leftChild={LEFT_CHILD}, rightArm=#, rightChild={RIGHT_CHILD})
+
 }

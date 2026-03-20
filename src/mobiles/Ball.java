@@ -19,6 +19,16 @@ public class Ball implements Node{
         radius = c;
         weight = d;
     }
+
+    public String getName()
+    {
+        return name;
+    }
+    public int getCord_len()
+    {
+        return cord_len;
+    }
+
     @Override
     public int getWeight()
     {
@@ -30,5 +40,5 @@ public class Ball implements Node{
         return true;
 
     }
-
+    //Ball(name={NAME}, cord=#, radius=#, weight=#)
 }

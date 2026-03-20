@@ -9,8 +9,10 @@ package mobiles;
 public abstract interface Node {
     // TODO
 
+
     public abstract int getWeight();
     public abstract boolean isBalanced();
+
 
 
 }

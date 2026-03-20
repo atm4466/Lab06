@@ -9,7 +9,7 @@ import java.util.Objects;
  * The class who parses the mobile file and builds the mobile tree.
  *
  * @author RIT CS
- * @author YOUR NAME HERE
+ * @author Andrew Moor
  */
 public class MobileParser {
     /** the root node */
