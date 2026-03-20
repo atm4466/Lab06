@@ -24,7 +24,10 @@ public class Rod implements Node{
         right_node = f;
 
     }
-
+    public int getCordLength()
+    {
+        return cord_len;
+    }
     @Override
     public int getWeight(){
         return right_node.getWeight()+left_node.getWeight();

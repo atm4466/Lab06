@@ -54,13 +54,7 @@ public class Mobiles {
         System.out.println("help: this help message");
         System.out.println("quit: end the program");
     }
-    public int getImbalance()
-    {
-        Rod temp = (Rod) root;
-        int imb = temp.getLeft_node().getWeight()*temp.getLeft_node().getCord_len() - temp.getRight_node().getWeight()*temp.getRight_node().getCord_len();
-        return imb;
 
-    }
     /**
      * Load a new mobile from a file
      * @param filename the mobile file
@@ -121,7 +115,8 @@ public class Mobiles {
                 case BALANCED -> {
                     // TODO
                     System.out.println("ROD_A balanced? " + root.isBalanced());
-                    System.out.println("Imbalance amount: " + getImbalance());
+                    System.out.println("Imbalance amount: " + root.getImbalance());
+                    
                     //usually Strings and ints dont mix but if I mask this variable it gets red lined.
                 }
                 case WEIGHT -> {
