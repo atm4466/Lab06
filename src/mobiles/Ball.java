@@ -7,11 +7,13 @@ package mobiles;
  * @author Andrew Moor
  */
 public class Ball implements Node{
+    //Vars
     private String name;
     private int cord_len;
     private int radius;
     private int weight;
 
+    //constructor for ball according to the instructions.
     public Ball(String a, int b, int c, int d)
     {
         name = a;
@@ -19,35 +21,38 @@ public class Ball implements Node{
         radius = c;
         weight = d;
     }
-
+    //returns the name
     public String getName()
     {
         return name;
     }
+    //returns cord len
     public int getCord_len()
     {
         return cord_len;
     }
 
+    //This returns the weight passed to it from the input files.
     @Override
     public int getWeight()
     {
         return weight;
     }
-
+    //Ball is always ballanced
     @Override
     public boolean isBalanced()
     {
         return true;
 
     }
+    //This is the toString asked by the instructions
     @Override
     public String toString()
     {
         return "Ball(name=" + name + ", cord=" + cord_len +", radius=" + radius +", weight=" + weight + ")";
 
     }
-
+    //Ball has no imbalance so its zero.
     @Override
     public int getImbalance() {
         return 0;

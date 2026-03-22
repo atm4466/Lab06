@@ -48,7 +48,8 @@ public class MobileParser {
 
         String line = in.readLine();
         String[] fields = line.split("\\st");
-
+        //This essentially makes the tree from the passedfile.
+        //This accounts for both classes of type Node
         if(Objects.equals(fields[0], "ROD")){
             //your objective here(String a,int b, int c, int d, Node e, Node f)
             Rod rod = new Rod(fields[1], Integer.valueOf(fields[2]),Integer.valueOf(fields[3]),Integer.valueOf(fields[4]),parse(in),parse(in));

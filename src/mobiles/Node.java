@@ -9,6 +9,7 @@ package mobiles;
 public abstract interface Node {
     // TODO
 
+    //Ball and Rod will need these implemented classes
 
     public abstract int getWeight();
     public abstract boolean isBalanced();
