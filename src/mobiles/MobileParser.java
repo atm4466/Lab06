@@ -24,7 +24,7 @@ public class MobileParser {
      * @param filename the mobile filename
      * @throws IOException an IO error occurs reading from the file
      */
-    public MobileParser(String filename) throws IOException {
+    public MobileParser(String filename) throws Exception {
         try (BufferedReader in = new BufferedReader(new FileReader(filename))){
             this.root = parse(in);
         } // <3 Jim
@@ -36,31 +36,42 @@ public class MobileParser {
      * @return a parsed Node of the mobile tree
      * @throws IOException an IO error occurs reading from the file
      */
-    private Node parse(BufferedReader in) throws IOException {
-        // TODO
-        /*  Example Mobile File for Reference, all files (preorderd!!!)
-                ROD ROD_A 70 60 90
-                BALL BALL_A 50 30 90
-                ROD ROD_B 170 100 50
-                BALL BALL_B 90 40 20
-                BALL BALL_C 60 35 40
-         */
-
+    private Node parse(BufferedReader in) throws Exception {
         String line = in.readLine();
-        String[] fields = line.split("\\st");
-        //This essentially makes the tree from the passedfile.
-        //This accounts for both classes of type Node
-        if(Objects.equals(fields[0], "ROD")){
-            //your objective here(String a,int b, int c, int d, Node e, Node f)
-            Rod rod = new Rod(fields[1], Integer.valueOf(fields[2]),Integer.valueOf(fields[3]),Integer.valueOf(fields[4]),parse(in),parse(in));
-        }
-        else if(Objects.equals(fields[0], "Ball"))
-        {
-            //(String a, int b, int c, int d)
-            Ball ball = new Ball(fields[1],Integer.valueOf(fields[2]),Integer.valueOf(fields[3]),Integer.valueOf(fields[4]));
+
+        if (line == null) {
+            throw new MobileException("Unexpected end of file");
         }
 
-        return null;
+        line = line.trim();
+        if (line.isEmpty()) {
+            return parse(in);   // skip blank lines
+        }
+
+        String[] fields = line.split("\\s+");
+
+        if (Objects.equals(fields[0], ROD)) {
+            String name = fields[1];
+            int cord_len = Integer.valueOf(fields[2]);
+            int left_len = Integer.valueOf(fields[3]);
+            int right_len = Integer.valueOf(fields[4]);
+
+            Node left_node = parse(in);
+            Node right_node = parse(in);
+
+            return new Rod(name, cord_len, left_len, right_len, left_node, right_node);
+        }
+        else if (Objects.equals(fields[0], BALL)) {
+            String name = fields[1];
+            int cord_len = Integer.valueOf(fields[2]);
+            int radius = Integer.valueOf(fields[3]);
+            int weight = Integer.valueOf(fields[4]);
+
+            return new Ball(name, cord_len, radius, weight);
+        }
+        else {
+            throw new MobileException("Unknown node type: " + fields[0]);
+        }
     }
 
     /**

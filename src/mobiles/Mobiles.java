@@ -61,11 +61,14 @@ public class Mobiles {
      */
     private void load(String filename) {
         try {
-            MobileParser parser = new MobileParser(filename);
+            String fullPath = "data/" + filename;   // ← THIS IS THE FIX
+            MobileParser parser = new MobileParser(fullPath);
             this.root = parser.getRoot();
             System.out.println(filename + " loaded and parsed!");
         } catch (IOException e) {
             System.out.println(e.getMessage());
+        } catch (Exception e) {   // temporary safety net
+            System.out.println("Error loading " + filename + ": " + e.getMessage());
         }
     }
 
@@ -138,7 +141,7 @@ public class Mobiles {
      *
      * @param args command line arguments (unused)
      */
-    public static void main(String[] args) {
+    static void main(String[] args) {
         if (args.length != 0) {
             System.out.println("Usage: java Mobiles");
         } else {

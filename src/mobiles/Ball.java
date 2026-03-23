@@ -8,10 +8,10 @@ package mobiles;
  */
 public class Ball implements Node{
     //Vars
-    private String name;
-    private int cord_len;
-    private int radius;
-    private int weight;
+    private final String name;
+    private final int cord_len;
+    private final int radius;
+    private final int weight;
 
     //constructor for ball according to the instructions.
     public Ball(String a, int b, int c, int d)

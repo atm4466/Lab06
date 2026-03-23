@@ -9,12 +9,12 @@ package mobiles;
 public class Rod implements Node{
     // TODO
     //Vars
-    private String name;
-    private int cord_len;
-    private int left_len;
-    private int right_len;
-    private Node right_node;
-    private Node left_node;
+    private final String name;
+    private final int cord_len;
+    private final int left_len;
+    private final int right_len;
+    private final Node right_node;
+    private final Node left_node;
     //Constructor
     public Rod(String a, int b, int c, int d, Node e, Node f){
         name = a;
@@ -41,8 +41,8 @@ public class Rod implements Node{
     @Override
     public int getImbalance() {
 
-        int LTORQUE  = (int)left_len*left_node.getWeight();
-        int RTOQUE = (int)right_len*right_node.getWeight();
+        int LTORQUE  = left_len *left_node.getWeight();
+        int RTOQUE = right_len *right_node.getWeight();
         //This should be fine assuming it can be negative or posotive difference.
         return LTORQUE - RTOQUE;
     }
@@ -56,12 +56,7 @@ public class Rod implements Node{
     public boolean isBalanced()
     {
 
-        if((left_node.getWeight()*left_len) == (right_node.getWeight()*right_len))
-        {
-            return true;
-
-        }
-        return false;
+        return (left_node.getWeight() * left_len) == (right_node.getWeight() * right_len);
     }
     //returns left node
     public Node getLeft_node()
